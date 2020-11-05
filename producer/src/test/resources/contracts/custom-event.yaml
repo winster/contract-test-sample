@@ -1,0 +1,9 @@
+label: custom-event-trigger
+input:
+  triggeredBy: onBaseTestClassMethod()
+outputMessage:
+  sentTo: custom-event-exchange
+  body:
+    value: AAA
+  headers:
+    contentType: application/json

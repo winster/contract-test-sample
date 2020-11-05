@@ -1,0 +1,4 @@
+stubrunner:
+  amqp:
+    enabled: true
+  stubs-mode: local
