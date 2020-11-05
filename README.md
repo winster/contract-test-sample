@@ -1,6 +1,5 @@
 ### Spring Cloud Contract based AMQP application
-This application is created as simple as possible. You may not find a simpler application anywhere else.
-
+This application is created as simple as possible. It uses spring-cloud-contract to verify the message contract at publisher and consumer side
 ### What does the application contain
 1. A Producer application to publish a message to amqp
 2. A Consumer application to receive the message
