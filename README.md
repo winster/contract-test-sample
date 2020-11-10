@@ -15,7 +15,7 @@ This application is created as simple as possible. It uses spring-cloud-contract
 3. Asserts the contract
 
 ### Issues found
-1. If following dependency is added,
+1. If following dependency is added (by replacing `spring-boot-starter-amqp`),
 ```
     <dependency>
       <groupId>org.springframework.cloud</groupId>
