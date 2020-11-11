@@ -19,3 +19,7 @@ This application is created as simple as possible. It uses spring-cloud-contract
 ```
 stubrunner.stream.enabled=false
 ```
+2. If `opentracing-spring-jaeger-cloud-starter` or any similar tracing is on classpath, you need to disable them as follows
+```
+opentracing.spring.rabbitmq.enabled=false
+```
