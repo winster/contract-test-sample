@@ -15,11 +15,13 @@ This application is created as simple as possible. It uses spring-cloud-contract
 3. Asserts the contract
 
 ### Additional points to notice
-1. If `spring-cloud-starter-bus-amqp` is used instead of `spring-boot-starter-amqp`, you need to disable `stream` as follows
+1. If `spring-cloud-starter-bus-amqp` is used instead of `spring-boot-starter-amqp`, you need to disable `stream` as follows to get rid of the error
+``` No bean named '<your-exchange-name>' available```
 ```
 stubrunner.stream.enabled=false
 ```
-2. If `opentracing-spring-jaeger-cloud-starter` or any similar tracing is on classpath, you need to disable them as follows
+2. If `opentracing-spring-jaeger-cloud-starter` or any similar tracing is on classpath, you need to disable them as follows to get rid of the error
+``` StubRunner AMQP will work only if RabbiTemplate is a spy```
 ```
 opentracing.spring.rabbitmq.enabled=false
 ```
